@@ -9,7 +9,7 @@ if(isset($this->data['userMessage'])){ ?>
 	<div class="umesg"><?php echo $this->t($this->data['userMessage']); ?></div>
 <?php }?>
 
-<h1> <?php echo $this->t('{selfregister:selfregister:link_panel}').': '.$this->data['source'] ?> </h1> 
+<! -- <h1> <?php echo $this->t('{selfregister:selfregister:link_panel}').': '.$this->data['source'] ?> </h1> --> 
 
 <ul>
 <?php
