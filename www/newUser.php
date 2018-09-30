@@ -126,6 +126,7 @@ if(array_key_exists('emailreg', $_REQUEST)){
 		$formGen->addHiddenData($hidden);
 		$formGen->setValues(
 			array(
+				'uid' => $email
 				'mail' => $email
 			)
 		);
