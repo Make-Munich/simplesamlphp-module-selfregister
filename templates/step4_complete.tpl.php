@@ -12,7 +12,7 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
     <li><a href="reviewUser.php"><?php echo $this->t('link_review'); ?></a></li>
     <li><a href="lostPassword.php"><?php echo $this->t('link_lostpw'); ?></li>
     <li><a href="changePassword.php"><?php echo $this->t('link_changepw'); ?></li>
-    <li><a href="delUser.php"><?php echo $this->t('link_deluser'); ?></li>
+    <!-- <li><a href="delUser.php"><?php echo $this->t('link_deluser'); ?></li> -->
   </ul>
 </div>
 
