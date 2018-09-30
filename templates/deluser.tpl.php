@@ -12,7 +12,7 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	<div class="umesg"><?php echo $this->t($this->data['userMessage']); ?></div>
 <?php }?>
 
-<h1><?php echo $this->t('review_head'); ?></h1>
+<!-- <h1><?php echo $this->t('review_head'); ?></h1> -->
 <p>
 	<?php echo $this->t('review_intro', array('%UID%' => '<b>' . $this->data['uid'] . '</b>') ); ?>
 </p>

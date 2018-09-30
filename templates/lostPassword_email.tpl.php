@@ -19,13 +19,12 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 			<p class="help-block"><?php echo $this->t('lpw_para2'); ?></p>
   		</div>
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
-			</div>
+			<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
 		</div>
 	</form>
 </div>  	  
 
+<p></p>
 <p>
 <ul>
 	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>

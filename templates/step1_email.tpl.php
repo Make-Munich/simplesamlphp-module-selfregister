@@ -24,13 +24,12 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 			<p class="help-block"><?php echo $this->t('s1_para2'); ?></p>
   		</div>
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
-			</div>
+			<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
 		</div>
 	</form>
 </div> 
 
+<p></p>
 <h2><?php echo $this->t('new_head_other'); ?></h2>
 <ul>
 	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
