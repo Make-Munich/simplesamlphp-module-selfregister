@@ -13,13 +13,11 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	<form method="post" action="lostPassword.php">
 		<div class="form-group">
 			<p class="help-block"><?php echo $this->t('lpw_para1'); ?></p>
-			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-			<div class="col-sm-10">
-				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-			</div>
+    		<label for="lostEmail">Email</label>
+			<input type="email" class="form-control" id="lostEmail" placeholder="Email" name="emailreg">
 			<?php if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']); ?>
 			<p class="help-block"><?php echo $this->t('lpw_para2'); ?></p>
-		</div>
+  		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
