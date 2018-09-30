@@ -174,11 +174,6 @@
 		"de": "Das angegebene Passwort f\u00fcr diese UserID ist falsch.",
 		"no": "Feil passord for denne brukeren."
 	},
-	"uid_desc": {
-		"es": "Los caracteres permitidos para el identificador de usuario son a..z, - y 0..9. El identificador debe empezar por una letra y tener una longitud de entre 3 y 16 caracteres.",
-		"de": "Die UserID darf nur aus den Kleinbuchstaben a bis z, dem Bindestrich, sowie den Ziffern 0 bis 9 bestehen. Die UserID mu\u00df aus mindestens drei und h\u00f6chstens 16 Zeichen bestehen.",
-		"no": "Tillatte tegn for brukernavn er a-z, - og 0-9. Det m\u00e5 starte p\u00e5 en bokstav. Lengen p\u00e5 brukernavnet m\u00e5 v\u00e6re minst 3 tegn og ikke mer enn 16."
-	},
 	"s1_para2": {
 		"es": "Recibir\u00e1s un correo con una URL que deber\u00e1s seguir para continuar con el registro.",
 		"de": "An diese Adresse wird eine automatisierte E-Mail gesendet, die einen URL enth\u00e4lt. Diesen URL rufen Sie dann in einem Webbrowser auf, um zu best\u00e4tigen, da\u00df Sie die Email erhalten haben.",

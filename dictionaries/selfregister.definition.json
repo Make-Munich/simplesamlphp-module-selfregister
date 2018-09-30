@@ -137,9 +137,6 @@
 	"message_chuinfo": {
 		"en": "User info successfully changed"
 	},
-	"uid_desc": {
-		"en": "Allowed chars for the User id is a-z, - and 0-9. It must start with a letter. The length of the User ID must be at least 3 characters and no longer than 16."
-	},
 	"pw1": {
 		"en": "New password"
 	},
