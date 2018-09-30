@@ -30,10 +30,10 @@ $links = array();
 			'href' => SimpleSAML_Module::getModuleURL('selfregister/changePassword.php'),
 			'text' => '{selfregister:selfregister:link_changepw}',
 		);
-		$links[] = array(
+		/* $links[] = array(
 			'href' => SimpleSAML_Module::getModuleURL('selfregister/delUser.php'),
 			'text' => '{selfregister:selfregister:link_deluser}',
-		);
+		); */
 		$links[] = array(
 			'href' => $as->getLogoutURL(),
 			'text' => '{status:logout}',
