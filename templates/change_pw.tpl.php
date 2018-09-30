@@ -13,7 +13,7 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 <?php }?>
 
 <!-- <h1><?php echo $this->t('cpw_head'); ?></h1> -->
-<p><?php echo $this->t('cpw_para1', array('%UID%' => $this->data['uid']) ); ?></p>
+<p><?php echo $this->t('cpw_para1', array('%UID%' => '<b>' . $this->data['uid'] . '</b>') ); ?></p>
 <?php echo $this->data['formHtml']; ?>
 
 
