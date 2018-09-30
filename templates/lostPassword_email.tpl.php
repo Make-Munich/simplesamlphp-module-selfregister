@@ -9,26 +9,24 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	  <div class="error"><?php echo $this->data['error']; ?></div>
 <?php }?>
 
-<form method="post" action="lostPassword.php">
-<div style="margin: 1em">
-	<h1><?php echo $this->t('lpw_head'); ?></h1>
-
-	<p><?php echo $this->t('lpw_para1'); ?></p>
-
-	<table>
-		<tr class="even">
-		<td>E-mail</td><td>
-		<input type="text" size="50" name="emailreg" value="<?php
-		if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']);
-		?>"/></td></tr>
-	</table>
-
-	<p><?php echo $this->t('lpw_para2'); ?></p>
-
-	<p><input type="submit" name="save" value="<?php echo $this->t('submit_mail'); ?>" />
-
-</div>
-</form>
+<div>
+	<form class="form-horizontal" method="post" action="lostPassword.php">
+		<div class="form-group">
+			<?php echo $this->t('lpw_para1'); ?>
+			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			</div>
+			<?php if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']); ?>
+			<?php echo $this->t('lpw_para2'); ?>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
+			</div>
+		</div>
+	</form>
+</div>  	  
 
 <p>
 <ul>
