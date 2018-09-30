@@ -118,6 +118,7 @@ if(array_key_exists('emailreg', $_REQUEST)){
 
 		$showFields = sspmod_selfregister_Util::genFieldView($viewAttr);
 		$formGen->fieldsToShow($showFields);
+		$formGen->setReadOnly('uid');
 		$formGen->setReadOnly('mail');
 
 		$hidden = array(
@@ -126,7 +127,7 @@ if(array_key_exists('emailreg', $_REQUEST)){
 		$formGen->addHiddenData($hidden);
 		$formGen->setValues(
 			array(
-				'uid' => $email
+				'uid' => $email,
 				'mail' => $email
 			)
 		);
