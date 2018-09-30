@@ -10,15 +10,15 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 <?php }?>
 
 <div>
-	<form class="form-horizontal" method="post" action="lostPassword.php">
+	<form method="post" action="lostPassword.php">
 		<div class="form-group">
-			<?php echo $this->t('lpw_para1'); ?>
+			<p class="help-block"><?php echo $this->t('lpw_para1'); ?></p>
 			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 			<div class="col-sm-10">
 				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 			</div>
 			<?php if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']); ?>
-			<?php echo $this->t('lpw_para2'); ?>
+			<p class="help-block"><?php echo $this->t('lpw_para2'); ?></p>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
