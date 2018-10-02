@@ -88,7 +88,7 @@ class sspmod_selfregister_XHTML_Form {
 	}
 
 	private function writeFormElement($elementId){
-		$html = '<div class="element">';
+		$html = '<div class="form-group">';
 		$html .= $this->writeLabel($elementId);
 		$html .= $this->writeInputControl($elementId);
 		$html .= $this->writeControlDescription($elementId);
@@ -115,7 +115,7 @@ class sspmod_selfregister_XHTML_Form {
 		$value = isset($this->values[$elementId])?$this->values[$elementId]:'';
 		$value = htmlspecialchars($value);
 		if($this->actionEndpoint != 'delUser.php') {
-			$format = '<input class="inputelement" type="%s" id="%s" name="%s" value="%s" size="%s" %s />';
+			$format = '<input class="form-control" type="%s" id="%s" name="%s" value="%s" size="%s" %s />';
 			$attr = '';
 			if(in_array($elementId, $this->readonly)){
 				$attr .= 'readonly="readonly"';
@@ -166,7 +166,7 @@ class sspmod_selfregister_XHTML_Form {
 
 	private function writeFormSubmit(){
 		$html = '';
-		$format = '<input type="submit" name="%s" value="%s" />';
+		$format = '<button type="submit" class="btn btn-default" name="%s">%s</button>';
 		$trValue = htmlspecialchars($this->transDesc->t($this->submitValue));
 		$html = sprintf($format, $this->submitName, $trValue);
 		return $html;
