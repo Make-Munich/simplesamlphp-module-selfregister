@@ -17,8 +17,9 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
         <?php echo $this->t('review_intro', array('%UID%' => '<b>' . $this->data['uid'] . '</b>') ); ?>
 </p>
 
-
+<div>
 <?php print $this->data['formHtml']; ?>
+</div>
 
 <h2><?php echo $this->t('new_head_other'); ?></h2>
 <ul>
