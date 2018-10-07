@@ -13,7 +13,7 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 <?php print $this->data['formHtml']; ?>
 
 <h2><?php echo $this->t('new_head_other'); ?></h2>
-<ul>
+<ul class="lead">
 	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
 </ul>
 

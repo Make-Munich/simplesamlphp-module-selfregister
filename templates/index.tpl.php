@@ -11,7 +11,7 @@ if(isset($this->data['userMessage'])){ ?>
 
 <!-- <h1> <?php echo $this->t('{selfregister:selfregister:link_panel}').': '.$this->data['source'] ?> </h1> --> 
 
-<ul>
+<ul class="lead">
 <?php
 	foreach ($this->data['links'] AS $link) {
 		echo '<li><a href="' . htmlspecialchars($link['href']) . '">' . $this->t($link['text']) . '</a>';

@@ -9,8 +9,7 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	  <!-- <h1><?php echo $this->t('new_mailUsed_head'); ?></h1> -->
 	  <p><?php echo $this->t('new_mailUsed_para1', $this->data['systemName']); ?></p>
 	  <ul>
-	    <li><a href="newUser.php"><?php echo $this->t('link_newuser'); ?></li>
-	    <li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
+			<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
 	  </ul>
 </div>
 
