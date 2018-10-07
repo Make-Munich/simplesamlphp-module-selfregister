@@ -99,6 +99,9 @@
 		"es": "Cambiar contrase\u00f1a",
 		"de": "Passwort \u00e4ndern"
 	},
+	"link_project": {
+		"de": "Mein Make Munich Projekt bearbeiten/einreichen"
+	},
 	"new_complete_head": {
 		"no": "Registreringen er fullf\u00f8rt",
 		"es": "Proceso de registro completo.",
@@ -263,6 +266,7 @@
 		"es": "Administrador de cuentas"
 	},
 	"link_enter": {
+		"de": "Daten des Benutzerkontos ändern",
 		"es": "Administrar mi cuenta"
 	},
 	"id_violation": {

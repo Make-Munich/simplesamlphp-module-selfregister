@@ -86,6 +86,9 @@
 	"link_changepw": {
 		"en": "Change password"
 	},
+	"link_project": {
+		"en": "Edit/submit my Make Munich Projekt"
+	},
 	"new_complete_head": {
 		"en": "Registration complete"
 	},

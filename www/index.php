@@ -8,20 +8,12 @@ $asId = $uregconf->getString('auth');
 
 $links = array();
 
-
-	$links[] = array(
-		'href' => SimpleSAML_Module::getModuleURL('selfregister/newUser.php'),
-		'text' => '{selfregister:selfregister:link_newuser}',
-	);
-
-	$links[] = array(
-		'href' => SimpleSAML_Module::getModuleURL('selfregister/lostPassword.php'),
-		'text' => '{selfregister:selfregister:link_lostpw}',
-	);
-
-
 	$as = new SimpleSAML_Auth_Simple($asId);
 	if ($as->isAuthenticated()) {
+		$links[] = array(
+			'href' => 'https://projects.make-munich.de',
+			'text' => '{selfregister:selfregister:link_project}',
+		);
 		$links[] = array(
 			'href' => SimpleSAML_Module::getModuleURL('selfregister/reviewUser.php'),
 			'text' => '{selfregister:selfregister:link_review}',
@@ -40,6 +32,15 @@ $links = array();
 		);
 	}
 	else {
+		$links[] = array(
+			'href' => SimpleSAML_Module::getModuleURL('selfregister/newUser.php'),
+			'text' => '{selfregister:selfregister:link_newuser}',
+		);
+	
+		$links[] = array(
+			'href' => SimpleSAML_Module::getModuleURL('selfregister/lostPassword.php'),
+			'text' => '{selfregister:selfregister:link_lostpw}',
+		);
 		$links[] = array(
 			'href' => SimpleSAML_Module::getModuleURL('selfregister/reviewUser.php'),
 			'text' => '{selfregister:selfregister:link_enter}',
