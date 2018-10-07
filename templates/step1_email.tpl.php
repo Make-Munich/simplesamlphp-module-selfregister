@@ -29,4 +29,4 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	</form>
 </div> 
 
-$this->includeAtTemplateBase('includes/footer.php'); ?>
+<?php $this->includeAtTemplateBase('includes/footer.php'); ?>
