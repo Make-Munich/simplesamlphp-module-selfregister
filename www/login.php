@@ -39,7 +39,7 @@ $links[] = array(
 	'text' => '{selfregister:selfregister:link_deluser}',
 ); */
 $links[] = array(
-	'href' => $as->getLogoutURL(),
+	'href' => $as->getLogoutURL(SimpleSAML_Module::getModuleURL('selfregister/index.php')),
 	'text' => '{status:logout}',
 );
 	
