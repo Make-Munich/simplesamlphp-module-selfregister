@@ -29,13 +29,4 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	</form>
 </div> 
 
-<p></p>
-<h2><?php echo $this->t('new_head_other'); ?></h2>
-<ul>
-	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
-<?php if (isset($this->data['logouturl'])) {?>
-	<li><a href="<?php echo $this->data['logouturl'];?>"><?php echo $this->t('{status:logout}'); ?></li>
-<?php } 
-echo '</ul>';
-
 $this->includeAtTemplateBase('includes/footer.php'); ?>
