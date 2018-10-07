@@ -21,13 +21,4 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 <?php print $this->data['formHtml']; ?>
 </div>
 
-<h2><?php echo $this->t('new_head_other'); ?></h2>
-<ul>
-
-	<li><a href="https://projects.make-munich.de"><?php echo $this->t('link_project'); ?></a></li>
-	<li><a href="changePassword.php"><?php echo $this->t('link_changepw'); ?></a></li>
-	<!-- <li><a href="delUser.php"><?php echo $this->t('link_deluser'); ?></a></li> -->
-	<li><a href="reviewUser.php?logout=true"><?php echo $this->t('{status:logout}'); ?></a></li>
-</ul>
-
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>
