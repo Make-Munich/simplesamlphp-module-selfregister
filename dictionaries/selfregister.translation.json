@@ -269,6 +269,9 @@
 		"de": "Daten des Benutzerkontos ändern",
 		"es": "Administrar mi cuenta"
 	},
+	"link_overview": {
+		"de": "Übersicht"
+	},
 	"id_violation": {
 		"es": "El identificador de usuario no puede ser modificado"
 	},

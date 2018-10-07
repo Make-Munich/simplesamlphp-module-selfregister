@@ -170,6 +170,9 @@
 	"link_enter": {
 		"en": "Manage my account"
 	},
+	"link_overview": {
+		"en": "Overview"
+	},
 	"id_violation": {
 		"en": "The user identification can not be changed"
 	},

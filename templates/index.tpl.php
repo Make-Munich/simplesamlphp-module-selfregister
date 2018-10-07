@@ -1,6 +1,6 @@
 <?php
 
-$this->data['header'] = $this->t('{selfregister:selfregister:link_panel}');
+$this->data['header'] = $this->t('{selfregister:selfregister:link_overview}');
 $this->data['head'] = '<link rel="stylesheet" href="resources/selfregister.css" type="text/css">';
 
 $this->includeAtTemplateBase('includes/header.php');
