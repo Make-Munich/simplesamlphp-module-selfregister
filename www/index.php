@@ -17,7 +17,7 @@ $links[] = array(
 	'text' => '{selfregister:selfregister:link_lostpw}',
 );
 $links[] = array(
-	'href' => SimpleSAML_Module::getModuleURL('selfregister/reviewUser.php'),
+	'href' => SimpleSAML_Module::getModuleURL('selfregister/login.php'),
 	'text' => '{selfregister:selfregister:link_enter}',
 );
 
