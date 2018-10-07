@@ -24,4 +24,9 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	</form>
 </div>  	  
 
+<h2><?php echo $this->t('new_head_other'); ?></h2>
+<ul class="lead">
+<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
+</ul>
+
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>
