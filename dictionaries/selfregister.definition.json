@@ -6,7 +6,7 @@
 		"en": "Lost password at %SNAME%"
 	},
 	"mailNew_mailintro": {
-		"en": "Hi thanks for using the %SNAME% service. This e-mail is sent so that you can verify your e-mail address:"
+		"en": "Hi, thanks for registering as a participant for Make Munich. This e-mail is used to confirm your e-mail address:"
 	},
 	"mailNew_urlintro": {
 		"en": "In order to continue registration of a new user on %SNAME%, visit the following URL:"
@@ -18,7 +18,7 @@
 		"en": "This URL contains a secret token that validates your e-mail address. This token is valid for only 5 days. If this token expire, you have to request a new token by starting the registration over again."
 	},
 	"mail1_signature": {
-		"en": "Kind regards\n%SNAME%"
+		"en": "Kind regards, your Make Munich Team"
 	},
 	"s1_head": {
 		"en": "Register new account at %SNAME%"
