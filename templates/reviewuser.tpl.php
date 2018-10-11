@@ -12,20 +12,18 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
         <div class="umesg"><?php echo $this->t($this->data['userMessage']); ?></div>
 <?php }?>
 
-<h1><?php echo $this->t('review_head'); ?></h1>
+<!-- <h1><?php echo $this->t('review_head'); ?></h1> -->
 <p>
         <?php echo $this->t('review_intro', array('%UID%' => '<b>' . $this->data['uid'] . '</b>') ); ?>
 </p>
 
-
+<div>
 <?php print $this->data['formHtml']; ?>
+</div>
 
 <h2><?php echo $this->t('new_head_other'); ?></h2>
-<ul>
-	<li><a href="changePassword.php"><?php echo $this->t('link_changepw'); ?></a></li>
-	<li><a href="delUser.php"><?php echo $this->t('link_deluser'); ?></a></li>
-	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
-	<li><a href="reviewUser.php?logout=true"><?php echo $this->t('{status:logout}'); ?></a></li>
+<ul class="lead">
+<li><a href="login.php"><?php echo $this->t('return'); ?></a></li>
 </ul>
 
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>

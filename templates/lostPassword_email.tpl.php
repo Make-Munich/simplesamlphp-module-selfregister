@@ -9,31 +9,24 @@ $this->includeAtTemplateBase('includes/header.php'); ?>
 	  <div class="error"><?php echo $this->data['error']; ?></div>
 <?php }?>
 
-<form method="post" action="lostPassword.php">
-<div style="margin: 1em">
-	<h1><?php echo $this->t('lpw_head'); ?></h1>
+<div>
+	<form method="post" action="lostPassword.php">
+		<div class="form-group">
+			<p class="help-block"><?php echo $this->t('lpw_para1'); ?></p>
+    		<label for="lostEmail">Email</label>
+			<input type="email" class="form-control" id="lostEmail" placeholder="Email" name="emailreg">
+			<?php if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']); ?>
+			<p class="help-block"><?php echo $this->t('lpw_para2'); ?></p>
+  		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-default"><?php echo $this->t('submit_mail'); ?></button>
+		</div>
+	</form>
+</div>  	  
 
-	<p><?php echo $this->t('lpw_para1'); ?></p>
-
-	<table>
-		<tr class="even">
-		<td>E-mail</td><td>
-		<input type="text" size="50" name="emailreg" value="<?php
-		if (isset($this->data['email'])) echo htmlspecialchars($this->data['email']);
-		?>"/></td></tr>
-	</table>
-
-	<p><?php echo $this->t('lpw_para2'); ?></p>
-
-	<p><input type="submit" name="save" value="<?php echo $this->t('submit_mail'); ?>" />
-
-</div>
-</form>
-
-<p>
-<ul>
-	<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
+<h2><?php echo $this->t('new_head_other'); ?></h2>
+<ul class="lead">
+<li><a href="index.php"><?php echo $this->t('return'); ?></a></li>
 </ul>
-</p>
 
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>

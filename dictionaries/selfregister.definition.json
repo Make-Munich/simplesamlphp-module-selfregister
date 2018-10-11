@@ -6,7 +6,7 @@
 		"en": "Lost password at %SNAME%"
 	},
 	"mailNew_mailintro": {
-		"en": "Hi thanks for using the %SNAME% service. This e-mail is sent so that you can verify your e-mail address:"
+		"en": "Hi, thanks for registering as a participant for Make Munich. This e-mail is used to confirm your e-mail address:"
 	},
 	"mailNew_urlintro": {
 		"en": "In order to continue registration of a new user on %SNAME%, visit the following URL:"
@@ -18,7 +18,7 @@
 		"en": "This URL contains a secret token that validates your e-mail address. This token is valid for only 5 days. If this token expire, you have to request a new token by starting the registration over again."
 	},
 	"mail1_signature": {
-		"en": "Kind regards\n%SNAME%"
+		"en": "Kind regards, your Make Munich Team"
 	},
 	"s1_head": {
 		"en": "Register new account at %SNAME%"
@@ -86,6 +86,9 @@
 	"link_changepw": {
 		"en": "Change password"
 	},
+	"link_project": {
+		"en": "Edit/submit my Make Munich Projekt"
+	},
 	"new_complete_head": {
 		"en": "Registration complete"
 	},
@@ -137,9 +140,6 @@
 	"message_chuinfo": {
 		"en": "User info successfully changed"
 	},
-	"uid_desc": {
-		"en": "Allowed chars for the User id is a-z, - and 0-9. It must start with a letter. The length of the User ID must be at least 3 characters and no longer than 16."
-	},
 	"pw1": {
 		"en": "New password"
 	},
@@ -169,6 +169,9 @@
 	},
 	"link_enter": {
 		"en": "Manage my account"
+	},
+	"link_overview": {
+		"en": "Overview"
 	},
 	"id_violation": {
 		"en": "The user identification can not be changed"

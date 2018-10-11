@@ -7,44 +7,19 @@ $uregconf = SimpleSAML_Configuration::getConfig('module_selfregister.php');
 $asId = $uregconf->getString('auth');
 
 $links = array();
+$links[] = array(
+	'href' => SimpleSAML_Module::getModuleURL('selfregister/newUser.php'),
+	'text' => '{selfregister:selfregister:link_newuser}',
+);
 
-
-	$links[] = array(
-		'href' => SimpleSAML_Module::getModuleURL('selfregister/newUser.php'),
-		'text' => '{selfregister:selfregister:link_newuser}',
-	);
-
-	$links[] = array(
-		'href' => SimpleSAML_Module::getModuleURL('selfregister/lostPassword.php'),
-		'text' => '{selfregister:selfregister:link_lostpw}',
-	);
-
-
-	$as = new SimpleSAML_Auth_Simple($asId);
-	if ($as->isAuthenticated()) {
-		$links[] = array(
-			'href' => SimpleSAML_Module::getModuleURL('selfregister/reviewUser.php'),
-			'text' => '{selfregister:selfregister:link_review}',
-		);
-		$links[] = array(
-			'href' => SimpleSAML_Module::getModuleURL('selfregister/changePassword.php'),
-			'text' => '{selfregister:selfregister:link_changepw}',
-		);
-		$links[] = array(
-			'href' => SimpleSAML_Module::getModuleURL('selfregister/delUser.php'),
-			'text' => '{selfregister:selfregister:link_deluser}',
-		);
-		$links[] = array(
-			'href' => $as->getLogoutURL(),
-			'text' => '{status:logout}',
-		);
-	}
-	else {
-		$links[] = array(
-			'href' => SimpleSAML_Module::getModuleURL('selfregister/reviewUser.php'),
-			'text' => '{selfregister:selfregister:link_enter}',
-		);
-	}
+$links[] = array(
+	'href' => SimpleSAML_Module::getModuleURL('selfregister/lostPassword.php'),
+	'text' => '{selfregister:selfregister:link_lostpw}',
+);
+$links[] = array(
+	'href' => SimpleSAML_Module::getModuleURL('selfregister/login.php'),
+	'text' => '{selfregister:selfregister:link_enter}',
+);
 
 $html = new SimpleSAML_XHTML_Template(
 		$config,
